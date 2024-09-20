@@ -11,16 +11,45 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Tailwind and DaisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/9becdc147d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Animation library AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var options = {
+          strings: ["Moving Soon? Get Everything You Need Before You Move"],
+          typeSpeed: 50, // Speed of typing (in milliseconds)
+          backSpeed: 25, // Speed of backspacing (if desired)
+          loop: false, // Set to true for continuous loop
+          showCursor: true, // Show the cursor
+        };
+
+        var typed = new Typed("#typewriter", options);
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        AOS.init();
+      };
+    </script>
+
     <style>
       body {
         font-family: "Roboto", sans-serif;
@@ -62,7 +91,7 @@
               >
                 <li class="text-lg"><a>Home</a></li>
                 <li class="text-lg">
-                  <a href="/moving-guide.html">Moving Guides</a>
+                  <a href="/about-us.html">About Us</a>
                 </li>
                 <li class="text-lg"><a>Blog</a></li>
                 <li class="text-lg"><a>Contact Us</a></li>
@@ -76,7 +105,7 @@
             <ul class="menu menu-horizontal px-1">
               <li class="text-lg"><a>Home</a></li>
               <li class="text-lg">
-                <a href="/moving-guide.html">Moving Guides</a>
+                <a href="/about-us.html">About Us</a>
               </li>
               <li class="text-lg"><a>Blog</a></li>
               <li class="text-lg"><a>Contact Us</a></li>
@@ -109,12 +138,18 @@
         <div
           class="w-full h-[500px] text-center flex justify-center items-center flex-col"
         >
-          <h2 class="text-white font-bebas text-6xl mb-6">
-            Moving Soon? Get Everything You Need Before You Move
-          </h2>
-          <button class="btn btn-error text-white">
-            Explore Moving Resources
-          </button>
+          <h2
+            id="typewriter"
+            class="text-white font-bebas text-3xl md:text-4xl lg:text-7xl mb-6"
+          ></h2>
+
+          <a href="blog.html"
+            ><button
+              class="btn btn-error text-white text-md md:text-xl lg:text-2xl"
+            >
+              Explore Moving Resources
+            </button></a
+          >
         </div>
       </section>
       <!-- feature / service we cover -->
@@ -131,6 +166,7 @@
         >
           <div
             class="flex justify-center items-center text-center shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
           >
             <div>
               <i
@@ -148,6 +184,7 @@
           </div>
           <div
             class="flex justify-center items-center text-center shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
           >
             <div>
               <i
@@ -165,6 +202,7 @@
           </div>
           <div
             class="flex justify-center items-center text-center shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
           >
             <div>
               <i
@@ -181,6 +219,7 @@
           </div>
           <div
             class="flex justify-center items-center text-center shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
           >
             <div>
               <i
@@ -208,7 +247,10 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center max-w-6xl mx-auto"
         >
-          <div class="shadow-md hover:shadow-xl p-6 rounded-lg">
+          <div
+            class="shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
+          >
             <div>
               <img class="mb-2" src="images/post-1.jpg" alt="" />
               <h3 class="text-2xl font-semibold mb-2 font-bebas">
@@ -216,11 +258,9 @@
               </h3>
               <i
                 class="fa-regular fa-calendar text-black hover:text-[#ff9b2f] text-sm mb-4"
-              ></i
-              ><span class="text-sm ml-2 mr-2">20 Sep, 2024</span>by<spann
-                class="text-sm ml-1"
-                >Admin</spann
-              >
+              ></i>
+              <span class="text-sm ml-2 mr-2">20 Sep, 2024</span> by
+              <span class="text-sm ml-1">Admin</span>
               <p class="text-gray-600">
                 Uncover 5 hidden costs that can surprise you during your move.
                 Avoid unexpected expenses and plan smarter for a budget-friendly
@@ -228,7 +268,10 @@
               </p>
             </div>
           </div>
-          <div class="shadow-md hover:shadow-xl p-6 rounded-lg">
+          <div
+            class="shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
+          >
             <div>
               <img class="mb-2" src="images/post-1.jpg" alt="" />
               <h3 class="text-2xl font-semibold mb-2 font-bebas">
@@ -236,11 +279,9 @@
               </h3>
               <i
                 class="fa-regular fa-calendar text-black hover:text-[#ff9b2f] text-sm mb-4"
-              ></i
-              ><span class="text-sm ml-2 mr-2">20 Sep, 2024</span>by<spann
-                class="text-sm ml-1"
-                >Admin</spann
-              >
+              ></i>
+              <span class="text-sm ml-2 mr-2">20 Sep, 2024</span> by
+              <span class="text-sm ml-1">Admin</span>
               <p class="text-gray-600">
                 Uncover 5 hidden costs that can surprise you during your move.
                 Avoid unexpected expenses and plan smarter for a budget-friendly
@@ -248,7 +289,10 @@
               </p>
             </div>
           </div>
-          <div class="shadow-md hover:shadow-xl p-6 rounded-lg">
+          <div
+            class="shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
+          >
             <div>
               <img class="mb-2" src="images/post-1.jpg" alt="" />
               <h3 class="text-2xl font-semibold mb-2 font-bebas">
@@ -256,11 +300,9 @@
               </h3>
               <i
                 class="fa-regular fa-calendar text-black hover:text-[#ff9b2f] text-sm mb-4"
-              ></i
-              ><span class="text-sm ml-2 mr-2">20 Sep, 2024</span>by<spann
-                class="text-sm ml-1"
-                >Admin</spann
-              >
+              ></i>
+              <span class="text-sm ml-2 mr-2">20 Sep, 2024</span> by
+              <span class="text-sm ml-1">Admin</span>
               <p class="text-gray-600">
                 Uncover 5 hidden costs that can surprise you during your move.
                 Avoid unexpected expenses and plan smarter for a budget-friendly
@@ -268,7 +310,10 @@
               </p>
             </div>
           </div>
-          <div class="shadow-md hover:shadow-xl p-6 rounded-lg">
+          <div
+            class="shadow-md hover:shadow-xl p-6 rounded-lg"
+            data-aos="fade-up"
+          >
             <div>
               <img class="mb-2" src="images/post-1.jpg" alt="" />
               <h3 class="text-2xl font-semibold mb-2 font-bebas">
@@ -276,11 +321,9 @@
               </h3>
               <i
                 class="fa-regular fa-calendar text-black hover:text-[#ff9b2f] text-sm mb-4"
-              ></i
-              ><span class="text-sm ml-2 mr-2">20 Sep, 2024</span>by<spann
-                class="text-sm ml-1"
-                >Admin</spann
-              >
+              ></i>
+              <span class="text-sm ml-2 mr-2">20 Sep, 2024</span> by
+              <span class="text-sm ml-1">Admin</span>
               <p class="text-gray-600">
                 Uncover 5 hidden costs that can surprise you during your move.
                 Avoid unexpected expenses and plan smarter for a budget-friendly
@@ -299,7 +342,7 @@
           >Before My Moving</a
         >
       </aside>
-      <div class="flex flex-col md:flex-row lg:flex-row">
+      <div class="flex flex-row">
         <i
           class="fa-brands fa-facebook text-lg text-white hover:text-[#0f59e5]"
         ></i>
