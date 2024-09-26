@@ -1,0 +1,23 @@
+/* 
+Theme Name: Before My Moving
+Theme URI: https://aan-nahl.com/themes/before-my-moving/
+Author: codeWithNafiu
+Author URI: https://codeWithNafiu.com/
+Description: This is a simple wordpress theme for those who needs information before their moving.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 6.2
+Requires PHP: 8.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: BeforeMyMoving
+*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
